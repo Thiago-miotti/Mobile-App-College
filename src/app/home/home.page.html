@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title id="title"> College Finder </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar id="toolbar">
+      <ion-title size="large" id="title">College Finder</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <ion-text id="frase">
+      <h1>Onde está sua Faculdade?</h1>
+    </ion-text>
+    <div class="search">
+      <ion-input
+        id="facul"
+        [(ngModel)]="CollegeName"
+        placeholder="Nome Faculdade"
+      >
+        <ion-icon id="iconFacul" slot="start" name="school-outline"></ion-icon>
+      </ion-input>
+      <ion-input
+        id="Pfacul"
+        [(ngModel)]="CollegeCountry"
+        placeholder="Pais Faculdade"
+      >
+        <ion-icon id="iconpais" slot="start" name="map-outline"></ion-icon>
+      </ion-input>
+
+      <ion-button id="Botao" (click)="search()">
+        <ion-icon slot="start" name="search-outline"></ion-icon>
+        Procurar
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

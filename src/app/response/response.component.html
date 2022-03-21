@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1>Faculdade Encontrada!!</h1>
+    <div class="content">
+      <div class="variavel">
+        <h3>{{ data.name }}</h3>
+        <h3>{{ data.country }}</h3>
+        <h3>{{ data.web_pages[0] }}</h3>
+      </div>
+    </div>
+    <ion-button class="botao" [routerLink]="['/home']"
+      ><ion-icon slot="start" name="search-outline"></ion-icon>Procurar
+      novamente</ion-button
+    >
+  </div>
+</ion-content>
